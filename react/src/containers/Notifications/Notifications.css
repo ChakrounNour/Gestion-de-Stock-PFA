@@ -1,0 +1,242 @@
+.Navigation-right {
+    height: 100%;
+    width: 40px;
+    margin-right: 10px;
+}
+@keyframes swing {
+    20% {
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+  
+    40% {
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+  
+    60% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+  
+    80% {
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+  
+    to {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+  
+  .swing {
+    transform-origin: top center;
+    animation-name: swing;
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animated.infinite {
+    animation-iteration-count: infinite;
+  }
+  .show {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    
+    box-shadow: none; }
+.Notification-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 30px;
+    width: 350px;
+    top: 80px;
+    right: 10px;
+    color: blue;
+    height: 40vh;
+    margin-top: -14px;
+    -webkit-box-shadow: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    opacity: 5;
+    box-shadow: none;
+    transform: translateY(-100%);
+    z-index: -2;
+    transition: all 1000ms ease-in-out;
+}
+
+
+.NotificationsShow {
+    transform: translateY(0);
+    z-index: -1;
+    opacity: 1;
+    background: #ffffff;
+
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6998ee;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4db6ac;
+}
+
+.Notification-right {
+    height: 100%;
+    width: 40px;
+}
+
+
+/* Custom Style for button */
+.Notification-btn {
+    padding: 0 0.6rem;
+    margin-right: 10px;
+    background: #ee6e73;
+    box-shadow: none;
+}
+
+.Notification-btn:hover {
+    padding: 0 0.6rem;
+    margin-right: 10px;
+    background: #ee6e73;
+    box-shadow: none;
+}
+
+.Notification-material-icon {
+    color: #7c7778!important;
+    stroke: currentcolor;
+    fill: currentcolor;
+    stroke-width: 0;
+    height: 25;
+    width: 25;
+}
+
+.Notification-material-icon:hover {
+    color: #4db6ac;
+}
+
+@media only screen and (min-width: 601px) {
+    .Notification-material-icon {
+        line-height: 2.2;
+    }
+}
+
+
+.Notification-counter {
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    display: block;
+    /* border: 1px solid #fafafa; */
+    border-radius: 50%;
+    text-align: center;
+    min-width: 18px;
+    height: 18px;
+     background: #818080; 
+    color: rgb(238, 214, 214);
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 16px;
+    background-color: #ff0505;
+    transition: background-color 1000ms ease-out;
+margin-right: 195px !important;
+margin-top: 9px;
+}
+
+.NewNotifications {
+    background-color: rgb(255, 251, 251);
+}
+
+/* Notofications wrapper styling */
+.Inner-head {
+    position: sticky;
+    width: 100%;
+    height: 40px;
+    background-color: #6998ee;
+    color: #fafafa;
+    display: flex;
+}
+
+.Inner-head-title {
+    align-self: center;
+    margin: 15px 0 15px 30px;
+}
+
+.Inner-Notification-wrapper {
+    padding: 10px;
+    height: 100%;
+    margin-top: -15px;
+    position: relative;
+    transition: all 1000 ease-in-out;
+}
+
+
+/* NotificationsOverlay Styles */
+.NotificationsOverlay-wrapper {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    width: 350px;
+
+}
+
+.NotificationsOverlay-group {
+    float: right;
+    flex-flow: column;
+    width: 100%;
+}
+.NotificationAnimate-enter {
+    transform: translateX(120%);
+    opacity: 0.01;
+}
+
+.NotificationAnimate-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms ease-in;
+}
+
+.NotificationAnimate-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification {
+    position: absolute;
+    background-color: #0e0d0d;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 18px;
+    padding: 0 5px;
+    height: 18px;
+    font-size: 12px;
+    color: #ff0505;
+    font-weight: bold;
+    line-height: 18px;
+    top: 10px;
+    margin-top: 9px;
+ margin-left: 1437px;
+    left: 19px; }
+.NotificationAnimate-exit-active {
+    opacity: 0.01;
+    transform: translateX(120%);
+    transition: all 500ms ease-in;
+}

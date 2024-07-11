@@ -1,0 +1,11 @@
+.sliderimg{
+    width: 100%;
+    height: 500px;
+    object-fit: cover
+  }
+  .PageHeading    
+{    
+  margin-top: 10px;    
+  margin-bottom: 10px;    
+  color :black !important;    
+}    

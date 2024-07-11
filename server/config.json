@@ -1,0 +1,11 @@
+﻿{
+    "database": {
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "bdstock2",
+        "dialect": "mysql"
+
+    
+    }
+}
